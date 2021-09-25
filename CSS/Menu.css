@@ -1,0 +1,89 @@
+
+
+body {
+	background-image: url(/images/fondo.png);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 100;
+	margin: 40;
+	min-height: 30vh;
+	background-size: cover;
+}
+#canvas {
+	height: 3%;
+}
+
+.menu{
+	display: flex;
+	flex-direction: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.boton{
+ 
+background: #ffd139;;
+	margin: 10%;
+	width:100%;
+	height: 500%;
+	border: #ff00ff;
+	color: black;
+	border-radius: 40px;
+	transition: ease-out 0.3s;
+	font-size: 250%;
+  font-family: "Fredoka One", cursive;
+	outline:none;
+	border: 5px solid #000000;
+	position: relative;
+	z-index:1;
+  
+  /*si quieren borran lo siguiente*/
+  
+ 
+}
+
+.boton:hover{
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+}
+
+.boton:before{
+	transition: 0.5s all ease;
+	position: absolute;
+	top:0;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+	opacity: 0;
+	content: "";
+  border-radius: 40px;
+	background-color: #00ffb3;
+}
+
+.boton:hover:before{
+	transition: 0.5s all ease;
+	left:0;
+	right:0;
+	opacity: 1;
+	z-index:-1
+}
+
+.contenedorPrincipal{
+	display: flex;
+	flex-direction: row;
+}
+
+.txt-Neon{
+	font-family: monospace;
+}
+
+h1 {
+  color: rgb(0, 255, 13);
+  font-size: 460%;
+  font-family: "Fredoka One", cursive;
+}
+* { margin:  0% ; padding : 0% ;border: 0%}
+
+
